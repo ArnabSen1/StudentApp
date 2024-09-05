@@ -10,7 +10,7 @@ void main() async {
       apiKey: 'AIzaSyDDJY2CFHUcycAig8Oj2IqAMSFEVLPsF9Y',
       appId: '1:411672249625:android:b4311b67c33a3a060f3188',
       messagingSenderId: '411672249625',
-      projectId: 'semiotic-bloom-411519',
+      projectId: 'location-data-b5fe2',
     ),
   );
   runApp(const MyApp());
@@ -47,7 +47,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   String _locationMessage = "";
-  final auth = Authservice();
+  final auth = AuthService();
 
   Future<void> _getCurrentLocation() async {
     bool serviceEnabled;
@@ -78,6 +78,11 @@ class _MyHomePageState extends State<MyHomePage> {
       _locationMessage =
           "Latitude: ${position.latitude.toStringAsFixed(5)},\nLongitude: ${position.longitude.toStringAsFixed(5)}";
     });
+    try {
+      await auth.addUser(lat: position.latitude.toString(), lon: position.longitude.toString());
+    } catch (e) {
+      print("Error getting location or creating user: ${e.toString()}");
+    }
   }
 
   @override

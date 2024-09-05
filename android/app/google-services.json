@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "411672249625",
+    "firebase_url": "https://location-data-b5fe2-default-rtdb.firebaseio.com",
+    "project_id": "location-data-b5fe2",
+    "storage_bucket": "location-data-b5fe2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411672249625:android:b4311b67c33a3a060f3188",
+        "android_client_info": {
+          "package_name": "com.example.studentattendence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411672249625-eg552pfl6s8vljn2vnh8e8dd8eiibgeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDJY2CFHUcycAig8Oj2IqAMSFEVLPsF9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411672249625-eg552pfl6s8vljn2vnh8e8dd8eiibgeb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411672249625:android:8ea5307d2796a8340f3188",
+        "android_client_info": {
+          "package_name": "com.project.studentattendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411672249625-v19bs6pjt3c4d5ll6ep22hilb0dju6hr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.studentattendance",
+            "certificate_hash": "fedb3e8cd51dd8e269536b0f70a3ea22c1723887"
+          }
+        },
+        {
+          "client_id": "411672249625-eg552pfl6s8vljn2vnh8e8dd8eiibgeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDJY2CFHUcycAig8Oj2IqAMSFEVLPsF9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411672249625-eg552pfl6s8vljn2vnh8e8dd8eiibgeb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411672249625:android:57c6b35fd4ef2ba30f3188",
+        "android_client_info": {
+          "package_name": "com.rcciit.teacherapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411672249625-6idhme7768al8gfhpccfvipdq15c0i55.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rcciit.teacherapp",
+            "certificate_hash": "fedb3e8cd51dd8e269536b0f70a3ea22c1723887"
+          }
+        },
+        {
+          "client_id": "411672249625-eg552pfl6s8vljn2vnh8e8dd8eiibgeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDJY2CFHUcycAig8Oj2IqAMSFEVLPsF9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411672249625-eg552pfl6s8vljn2vnh8e8dd8eiibgeb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

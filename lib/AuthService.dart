@@ -1,9 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_database/firebase_database.dart'; 
 
 class AuthService {
   final _auth = FirebaseAuth.instance;
+  final _database = FirebaseDatabase.instance.ref(); 
 
   Future<UserCredential?> loginWithGoogle() async {
     try {
@@ -26,10 +27,12 @@ class AuthService {
       User? user = _auth.currentUser;
       
       if (user != null) {
-        String email = user.email!;  
-        CollectionReference users = FirebaseFirestore.instance.collection('student');
-        await users.add({
-          'email':email,
+        String email = user.email!;
+
+        DatabaseReference usersRef = _database.child('students').push();
+
+        await usersRef.set({
+          'email': email,
           'latitude': lat,
           'longitude': lon,
         });

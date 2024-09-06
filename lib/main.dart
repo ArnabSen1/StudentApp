@@ -23,15 +23,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Student Attendance',
+      title: 'Employee Attendance',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 9, 9, 9)),
         useMaterial3: true,
         textTheme: Theme.of(context).textTheme.apply(
-              fontFamily: 'Poppins', // Custom font for modern look
+              fontFamily: 'Poppins',
             ),
       ),
-      home: const MyHomePage(title: 'Student Attendance'),
+      home: const MyHomePage(title: 'Give The Attendance'),
     );
   }
 }
@@ -97,7 +97,8 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(
           widget.title,
-          style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+          textAlign: TextAlign.center,
         ),
         backgroundColor: const Color.fromARGB(255, 53, 36, 93),
         elevation: 0,
